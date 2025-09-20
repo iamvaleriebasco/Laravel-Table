@@ -4,9 +4,9 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Table; // Make sure the namespace + class name matches
+use App\Livewire\Posts\Table; // Make sure the namespace + class name matches
 
-Route::get('/users', Table::class);
+Route::get('/posts', Table::class)->name('posts.index');
 
 
 Route::get('/', function () {

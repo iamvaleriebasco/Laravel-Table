@@ -11,10 +11,12 @@
             </tr>
         </thead>
         <tbody class="divide-y divide-gray-200">
-            @foreach($users as $user)
-            <livewire:users.table-row :user="$user" />
-            @endforeach
+        @foreach($posts as $post)
+            <livewire:posts.table-row :post="$post" />
+        @endforeach
+
         </tbody>
     </table>
+
 </div>
 
